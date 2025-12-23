@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أعمال عثمان يوسف</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --blue: #1e3a5f;
+      --brown: #6b4f3f;
+      --gold: #d4af37;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(30,58,95,0.75), rgba(107,79,63,0.75)), url('images/hero.jpg') center/cover no-repeat;
+      position: relative;
+    }
+
+    .overlay {
+      color: white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: var(--gold);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .overlay p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      animation: fadeUp 1.3s ease forwards;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, var(--gold), var(--brown));
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      animation: fadeUp 1.6s ease forwards;
+    }
+
+    section {
+      padding: 50px 20px;
+      background: white;
+      margin: 20px auto;
+      max-width: 1100px;
+      border-radius: 16px;
+      border-top: 5px solid var(--blue);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: var(--blue);
+    }
+
+    .info ul {
+      list-style: none;
+      font-size: 1.1rem;
+    }
+
+    .info li {
+      margin-bottom: 12px;
+      color: var(--brown);
+    }
+
+    .gallery .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 3px solid var(--gold);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 14px;
+      border: 3px solid var(--gold);
+    }
+
+    footer {
+      background: linear-gradient(45deg, var(--blue), var(--brown));
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: var(--gold);
+      color: #111;
+      font-size: 32px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>عثمان يوسف</h1>
+      <p>خبير تركيب السيراميك والبورسلين</p>
+      <a href="tel:+966547146056" class="btn">📞 اتصل الآن</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>من نحن</h2>
+    <p>
+      خبرة طويلة في تركيب جميع أنواع السيراميك والبورسلين بأعلى جودة ودقة، مع الالتزام بالمواعيد والتسليم الهندسي والاستشاري و نعمل على تركيب السيراميك والبورسلين باستخدام أحدث الأساليب وأفضل الخامات،
+مع الاهتمام بأدق التفاصيل لضمان المتانة، والاستواء التام، والشكل الجمالي
+الذي يدوم لسنوات طويلة
+     
+    </p>
+  </section>
+
+  <section class="info">
+    <h2>بيانات التواصل</h2>
+    <ul>
+      <li><strong>📍 العنوان:</strong> الرياض – المنفوحة</li>
+      <li><strong>📞 الهاتف:</strong> +966547146056</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>معرض الأعمال</h2>
+    <div class="grid">
+      <img src="work1.jpj.jpeg">
+      <img src="work2.jpj.jpeg">
+      <img src="work3.jpj.jpeg">
+      
+     
+    </div>
+  <section class="videos">
+  <h2>فيديوهات من الشغل</h2>
+
+  <video controls width="300">
+    <source src="work.mp4.mp4" type="video/mp4">
+  </video>
+
+  <video controls width="300">
+    <source src="work2.mp4.mp4" type="video/mp4">
+  </video>
+
+  <video controls width="300">
+    <source src="work3.mp4.mp4" type="video/mp4">
+  </video>
+  <video controls width="300">
+    <source src="work4.mp4.mp4" type="video/mp4">
+  </video>
+  <video controls width="300">
+    <source src="work5.mp4.mp4" type="video/mp4">
+  </video>
+  <video controls width="300">
+    <source src="work6.mp4.mp4" type="video/mp4">
+  </video>
+</section>
+
+  </section>
+
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة | عثمان يوسف</p>
+  </footer>
+
+  <a href="https://wa.me/966547146056" class="whatsapp" target="_blank">💬</a>
+
+</body>
+</html>
+```
+
